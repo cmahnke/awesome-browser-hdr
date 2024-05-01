@@ -1,9 +1,8 @@
-# Awesome HDR in the Browser
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome HDR in the Browser [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 A curated list of awesome tools, issues, resources and other awesomeness. Inspired by [awesome-python](https://github.com/vinta/awesome-python), [awesome-bigdata](https://github.com/oxnr/awesome-bigdata) & [awesome](https://github.com/sindresorhus/awesome) itself.
 
-Your contributions are always welcome!
+Your [contributions](./contributing.md) are always welcome!
 
 The list is about displaying [HDR](https://en.wikipedia.org/wiki/High_dynamic_range) contents in a browser, currently leaning heavily towards images. HDR video might be added later. This is is only a list, it doesn't contain an introduction. A great good starting point on the topic is the [HDR page by Greg Benz](https://gregbenzphotography.com/hdr/).
 
@@ -11,7 +10,7 @@ The list is about displaying [HDR](https://en.wikipedia.org/wiki/High_dynamic_ra
 
 - [Formats](#formats)
 - [Tools](#tools)
-- [Ressources](#resources)
+- [Ressources](#ressources)
 
 ## Formats
 
@@ -51,8 +50,8 @@ Currently graphic programs are missing. The focus is (currently) on libraries an
 #### Other
 
 - [Gainmap Creator](https://gainmap-creator.monogrid.com/)
-- [`gainmap-js`](https://github.com/MONOGRID/gainmap-js) - A JavaScript (TypeScript) Port of Adobe Gainmap Technology for storing HDR Images using an SDR Image + a gainmap
-- [`libultrahdr-wasm`](https://github.com/MONOGRID/libultrahdr-wasm) - WASM build of `libultrahdr
+- [`gainmap-js`](https://github.com/MONOGRID/gainmap-js) - A JavaScript (TypeScript) Port of Adobe Gainmap Technology for storing HDR Images using an SDR Image + a gainmap.
+- [`libultrahdr-wasm`](https://github.com/MONOGRID/libultrahdr-wasm) - WASM build of `libultrahdr.
 
 ### Apple HDR
 
@@ -74,13 +73,12 @@ The first step to foster the adoption of HDR in the browser is to improve toolin
 - [**Tev**](https://github.com/Tom94/tev/issues/226)
 - [HDRImageViewer](https://github.com/13thsymphony/HDRImageViewer/issues/66)
 - [`ffmpeg`](https://trac.ffmpeg.org/ticket/10974)
-- <s>[`stb_image`](https://github.com/nothings/stb/issues/1637)</s>
 - https://github.com/python-pillow/Pillow/issues/8036
 - [memories](https://github.com/pulsejet/memories/issues/1110)
 - [CanIUse](https://github.com/Fyrd/caniuse/issues/6759)
 - [`libjxl`](https://github.com/libjxl/libjxl/issues/2685)
 
-## Resources
+## Ressources
 
 The specifications and technical documentations are linked in the first section on file formats.
 
@@ -92,11 +90,7 @@ The specifications and technical documentations are linked in the first section 
 ### Other HDR **awesome** lists
 Mostly outdated / unmaintained
 
-- [Awesome-Deep-HDR](https://github.com/vinthony/awesome-deep-hdr) - A collection of deep learning based methods for HDR image synthesis
+- [Awesome-Deep-HDR](https://github.com/vinthony/awesome-deep-hdr) - A collection of deep learning based methods for HDR image synthesis.
 - [Awesome-HDR](https://github.com/ytZhang99/Awesome-HDR) - Collect High Dynamic Range Imaging (especially for Multi-exposure Fusion and High Dynamic Range Imaging) Related Papers and Codes.
 - [Awesome HDR Deghosting](https://github.com/liuzhen03/awesome-hdr-deghosting) - A curated list of multi-frame HDR deghosting resources.
-- [awesome-hdr-imaging](https://github.com/Jonashwang/awesome-hdr-imaging) - A collection of methods for high dynamic range imaging High dynamic range imaging is an important topic on image processing, especially in mobile photograpyh
-
-## Updating this list
-
-Just send me either a PR or raise an issue if you want to add a link or a text fragment to the list.
+- [awesome-hdr-imaging](https://github.com/Jonashwang/awesome-hdr-imaging) - A collection of methods for high dynamic range imaging High dynamic range imaging is an important topic on image processing, especially in mobile photography.
