@@ -1,0 +1,31 @@
+name: Lint list
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'readme.md'
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.0.1
+        with:
+          node-version-file: '.nvmrc'
+
+      - name: install `awesome-lint`
+        run: npm install -g awesome-lint
+
+      - name: awesome-lint
+        run: npx awesome-lint
