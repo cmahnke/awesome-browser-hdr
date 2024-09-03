@@ -22,12 +22,43 @@ There are more HDR image formats (like [OpenEXR](https://openexr.com/en/latest/)
   - [Gainmap specification](https://helpx.adobe.com/camera-raw/using/gain-map.html)
 - [AVIF (HDR)](https://en.wikipedia.org/wiki/AVIF)
 - [JPEG XL](https://jpeg.org/jpegxl/)
+- [PNG](https://github.com/w3c/ColorWeb-CG/blob/main/hdr-in-png-requirements.md) - with HDR support.
 
 ### Video
 
-- [Wikipedia on HDR video / television](https://en.wikipedia.org/wiki/High-dynamic-range_television)
+Several video formats support HDR videos, sites like YouTube usually support some or all of the above, see also [Wikipedia on HDR video / television](https://en.wikipedia.org/wiki/High-dynamic-range_television).
+
+#### Container formats
+
+These container formats allow the for HDR require metadata.
+
+- MKV
+- MOV/QuickTime
+- MP4
+
+#### Codecs
+
+These formats support HDR video content. there are others as well, but those usually have very limited browser support, if at all.
+
+- AV1
+- HEVC/H.265
+- VP9 Profile 2
+
+### 3D
+
+#### WebGPU
+
+- [WebGPU Extended Range Brightness](https://github.com/ccameron-chromium/webgpu-hdr/blob/main/EXPLAINER.md)
+
+#### WebGL
+
+- [WebGL Extended Range Brightness](https://github.com/ccameron-chromium/webgl-hdr)
 
 ### Browser support
+
+Since browser change rapidly this list might be outdated soon, currently there is an afford to [add this data to CanIUse](https://github.com/Fyrd/caniuse/issues/6759).
+
+
 
 ## Tools
 
@@ -45,7 +76,9 @@ Currently graphic programs are missing. The focus is (currently) on libraries an
 
 #### `libultrahdr`
 - [`libultrahdr` on GitHub](https://github.com/google/libultrahdr)
-- [`libultrahdr` and Python](https://github.com/albertz/playground/blob/master/ultrahdr.py), [discussion](https://www.reddit.com/r/Python/comments/1ac8ooy/playing_around_with_ultra_hdr/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button), [demo](https://github.com/albertz/playground/wiki/HDR-demo) by [Albert Zeyer](https://github.com/albertz)
+- [`libultrahdr` and Python](https://github.com/albertz/playground/blob/master/ultrahdr.py)
+  - [discussion](https://www.reddit.com/r/Python/comments/1ac8ooy/playing_around_with_ultra_hdr/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+  - [demo](https://github.com/albertz/playground/wiki/HDR-demo) - by [Albert Zeyer](https://github.com/albertz)
 
 #### Other
 
@@ -58,11 +91,16 @@ Currently graphic programs are missing. The focus is (currently) on libraries an
 - [Applying Apple HDR effect to your photos](https://developer.apple.com/documentation/appkit/images_and_pdf/applying_apple_hdr_effect_to_your_photos)
 - [AppleJPEGGainMap](https://github.com/grapeot/AppleJPEGGainMap)
 
-### Viewer
+### Viewer / Desktop browsers
 
 Currently the only [Chrome](https://www.google.com/chrome/) seems to be able to display Ultra HDR images.
 Since it's based on Chromium, other Browsers using this base will work as well, some might need to be configured accordingly:
-- []()
+- [Edge](https://www.microsoft.com/en-us/edge) - works.
+- [Brave](https://brave.com/) - needs configuration - `brave://flags/#gainmap-hdr-images`.
+- [Opera](https://www.opera.com/) - need configuration - `opera://flags/#gainmap-hdr-images`.
+- [Vivaldi](https://vivaldi.com/) - need configuration.
+
+Firefox currently only has limited HDR support.
 
 ### Issues / feature requests for important tools
 
@@ -70,10 +108,10 @@ The first step to foster the adoption of HDR in the browser is to improve toolin
 
 - [LibVips](https://github.com/libvips/libvips/issues/3799)
 - [ImageMagick](https://github.com/ImageMagick/ImageMagick/issues/6377)
-- [**Tev**](https://github.com/Tom94/tev/issues/226)
+- [Tev](https://github.com/Tom94/tev/issues/226)
 - [HDRImageViewer](https://github.com/13thsymphony/HDRImageViewer/issues/66)
 - [`ffmpeg`](https://trac.ffmpeg.org/ticket/10974)
-- https://github.com/python-pillow/Pillow/issues/8036
+- [Python Pillow](https://github.com/python-pillow/Pillow/issues/8036)
 - [memories](https://github.com/pulsejet/memories/issues/1110)
 - [CanIUse](https://github.com/Fyrd/caniuse/issues/6759)
 - [`libjxl`](https://github.com/libjxl/libjxl/issues/2685)
