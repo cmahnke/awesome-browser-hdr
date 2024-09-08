@@ -10,6 +10,7 @@ The list is about displaying [HDR](https://en.wikipedia.org/wiki/High_dynamic_ra
 
 - [Formats](#formats)
 - [Tools](#tools)
+- [JavaScript libraries](#javascript-libraries)
 - [Ressources](#ressources)
 
 ## Formats
@@ -58,8 +59,6 @@ These formats support HDR video content. there are others as well, but those usu
 
 Since browser change rapidly this list might be outdated soon, currently there is an afford to [add this data to CanIUse](https://github.com/Fyrd/caniuse/issues/6759).
 
-
-
 ## Tools
 
 Currently graphic programs are missing. The focus is (currently) on libraries and command line tools.
@@ -85,6 +84,7 @@ Currently graphic programs are missing. The focus is (currently) on libraries an
 - [Gainmap Creator](https://gainmap-creator.monogrid.com/)
 - [`gainmap-js`](https://github.com/MONOGRID/gainmap-js) - A JavaScript (TypeScript) Port of Adobe Gainmap Technology for storing HDR Images using an SDR Image + a gainmap.
 - [`libultrahdr-wasm`](https://github.com/MONOGRID/libultrahdr-wasm) - WASM build of `libultrahdr.
+- [`ultrahdr-js`](https://github.com/mjurczyk/ultrahdr-js) - A Node implementation for UltraHDR.
 
 ### Apple HDR
 
@@ -115,6 +115,13 @@ The first step to foster the adoption of HDR in the browser is to improve toolin
 - [memories](https://github.com/pulsejet/memories/issues/1110)
 - [CanIUse](https://github.com/Fyrd/caniuse/issues/6759)
 - [`libjxl`](https://github.com/libjxl/libjxl/issues/2685)
+
+## JavaScript libraries
+
+Note: Some JavaScript libraries are also listed in the *tools* section.
+
+- [`gainmap-js`](https://github.com/MONOGRID/gainmap-js) - A JavaScript (TypeScript) Port of Adobe Gainmap Technology for storing HDR Images using an SDR Image + a gainmap.
+- [`hdr-canvas`](https://github.com/cmahnke/hdr-canvas/) - by the author of this list: A JavaScript library for handling HDR in a `canvas` element and HDR detection.
 
 ## Ressources
 
